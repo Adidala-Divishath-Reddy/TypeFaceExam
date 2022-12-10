@@ -12,8 +12,8 @@ void solve(vector<vector<int>> &matrix){
                 centreX, centreY, width, height;
                 centreY = minRow + (maxRow - minRow)/2;
                 centreX = minCol + (maxCol - minCol)/2;
-                width = maxCol - minCol;
-                height = maxRow - minRow;
+                width = maxCol - minCol + 1;
+                height = maxRow - minRow + 1;
                 cout<<"["<<centreX << ","<<centreY<<","<< width<<","<<height<<"]";
             }
         }
