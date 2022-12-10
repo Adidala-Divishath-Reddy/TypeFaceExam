@@ -9,9 +9,10 @@ void solve(vector<vector<int>> &matrix){
                 minCol = matrix[0].size();
                 maxCol = -1;
                 dfs(image, i, j, minRow, maxRow, minCol, maxCol);
-                centreX, centreY, width, height;
-                centreY = minRow + (maxRow - minRow)/2;
-                centreX = minCol + (maxCol - minCol)/2;
+                float centreX, centreY;
+                int width, height;
+                centreY = (float)minRow + (float)((float)maxRow - (float)minRow)/2.0;
+                centreX = (float)minCol + (float)((float)maxCol - (float)minCol)/2.0;
                 width = maxCol - minCol + 1;
                 height = maxRow - minRow + 1;
                 cout<<"["<<centreX << ","<<centreY<<","<< width<<","<<height<<"]";
